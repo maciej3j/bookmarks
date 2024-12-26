@@ -22,4 +22,7 @@ urlpatterns = [
     path('', views.dashboard, name='dashboard'),
     path('register/', views.register, name='register'),
     path('edit/', views.edit, name='edit'),
+
 ]
+# https://localhost:8000/images/create/?title=testowytytul&url=https://bimbla.pl/environment/cache/images/500_500_productGfx_13/Obrazek_Piesek.jpg
+# https://127.0.0.1:8000/images/create/?title=testowytytul&url=https://bimbla.pl/environment/cache/images/500_500_productGfx_13/Obrazek_Piesek.jpg
