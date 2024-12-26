@@ -42,6 +42,11 @@ SECRET_KEY = 'django-insecure-6u(r_6ddn35*yw+*x__5&a@!t60)4c6-3dp-sfw8&wr%6*mfp0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+if DEBUG:
+    import mimetypes
+    mimetypes.add_type('application/javascript', '.js', True)
+    mimetypes.add_type('text/css', '.css', True)
+
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 LOGIN_REDIRECT_URL = 'dashboard'
