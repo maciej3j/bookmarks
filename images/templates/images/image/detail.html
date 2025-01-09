@@ -48,7 +48,7 @@
   const url = '{% url "images:like" %}';
   var options = {
     method: 'POST',
-    headers: {'X-CSRFToken': csrftoken},
+    headers: {'X-CSRFToken': csrf_token},
     mode: 'same-origin'
   }
 
