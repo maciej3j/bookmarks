@@ -67,7 +67,15 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 # Application definition
-
+PROJECT_APPS = [
+    
+    'social_django',
+    'django_extensions',
+    'images.apps.ImagesConfig',
+    'easy_thumbnails',
+    'actions.apps.ActionsConfig',
+    'debug_toolbar',
+]
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'django.contrib.admin',
@@ -76,13 +84,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'social_django',
-    'django_extensions',
-    'images.apps.ImagesConfig',
-    'easy_thumbnails',
-    'actions.apps.ActionsConfig',
-    'debug_toolbar',
-
 ]
 
 MIDDLEWARE = [
