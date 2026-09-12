@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+if DEBUG:
+    INSTALLED_APPS += "django_extensions"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
