@@ -1,0 +1,29 @@
+[project]
+name = "bookmarks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Maciej Kowalski", email = "maciej.ko1444@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.1",
+]
+[tool.uv]
+package = false
+
+[project.scripts]
+bookmarks = "bookmarks:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+
+[dependency-groups]
+dev = [
+    "django-extensions>=4.1",
+    "django-stubs>=6.1.0",
+    "werkzeug>=3.1.8",
+]
