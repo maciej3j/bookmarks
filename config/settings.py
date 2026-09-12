@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = "dashboard"
+LOGIN_URL = "login"
+LOGOUT_URL = "logout"
+
 
 # Application definition
 
@@ -38,9 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_extensions",
 ]
-if DEBUG:
-    INSTALLED_APPS += "django_extensions"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
