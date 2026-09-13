@@ -10,7 +10,7 @@ from django.contrib.auth.views import (
 )
 from django.urls import include, path
 
-from account.views import dashboard
+from account.views import dashboard, register, edit
 
 # from account import views
 
@@ -42,4 +42,6 @@ urlpatterns = [
     # ),
     path("", include("django.contrib.auth.urls")),
     path("", dashboard, name="dashboard"),
+    path("register/", register, name="register"),
+    path("edit/", edit, name="edit"),
 ]
